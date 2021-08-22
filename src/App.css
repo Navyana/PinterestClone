@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header{
+   display:flex;
+    align-items: Center;
+    height:56px;
+    padding: 12px 4px 4px 16px;
+    background-color: white;
+    color: black
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#HomeButtons{
+  display:flex;
+  height: 48px;
+  min-width: 123px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.HomePageButton{
+  background-color: rgb(17, 17, 17);
+}
+.HomePageButton a{
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+}
+.FollowingButton{
+  background-color: white;
+}
+.FollowingButton a{
+    text-decoration:none;
+    color: black;
+    font-weight:700;
+}
+.FollowingButton:hover{
+  background-color: #e1e1e1;
+}
+.Search{
+  flex: 1;
+}
+.SearchBar{
+  background-color: #efefef;
+  display: flex;
+  height:48px;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding-left:  10px;
+}
+.SearchBar form{
+  display:felx;
+  flex: 1;
+}
+.SearchBar form > input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 47px;
+  margin-left:5px;
+  font-size:16px;
+}
+.SearchBar form > button{
+  display: none;
+}
+.SearchBar input:focus{
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.Main{
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  column-count: 5;
+  column-gap: 5px;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1260px;
+  background-color: white;
+}
+
+/*Pins section*/
+
+.PinsSection{
+  display: inline-flex;
+  padding: 8px;
+}
+
+.pin{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 236px;
+}
+.pin img{
+  display: flex;
+  width: 100%;
+  cursor: zoom-in;
+  border-radius: 16px;
+  object-fit: cover;
 }
